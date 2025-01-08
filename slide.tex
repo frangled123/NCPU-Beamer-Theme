@@ -114,6 +114,7 @@
 \end{frame}
 
 \begin{frame}{排版举例}
+    \linespread{0.8}  % 设置单页行距
     \begin{exampleblock}{无编号公式} % 加 * 
         \begin{equation*}
             J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
