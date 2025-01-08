@@ -1,17 +1,16 @@
 \documentclass{beamer}
 \usepackage{ctex, hyperref}
-\usepackage[T1]{fontenc}
-
+%\usepackage[T1]{fontenc}
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
 
-\author{黄小明}
-\title{PKU Beamer Theme}
-\subtitle{毕业设计开题报告}
-\institute{北京大学xxx学院}
-\date{2020年11月24日}
-\usepackage{PekingU}
+\author{Fred Cheung}
+\title{NCPU Beamer Theme}
+\subtitle{xxx的报告}
+\institute{理化教研室}
+\date{2025年1月7日}
+\usepackage{NCPU}
 
 % defs
 \def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
@@ -40,7 +39,7 @@
     \titlepage
     \begin{figure}[htpb]
         \begin{center}
-            \includegraphics[width=0.2\linewidth]{pic/PKU_logo.png}
+            \includegraphics[width=0.2\linewidth]{pic/NCPU_logo.png}
         \end{center}
     \end{figure}
 \end{frame}
@@ -57,7 +56,7 @@
         \item 大家都会\LaTeX{}，好多学校都有自己的Beamer主题
         \item 中文支持请选择 Xe\LaTeX{} 编译选项
         \item Overleaf项目地址位于 \url{https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb}，可以直接使用
-        \item GitHub项目地址位于 \url{https://github.com/inFaaa/PKU-Beamer-Theme}，如果有bug或者feature request可以去里面提issue
+        \item GitHub项目地址位于 \url{https://github.com/frangled123/NCPU-Beamer-Theme}，如果有bug或者feature request可以去里面提issue
     \end{itemize}
 \end{frame}
 
@@ -68,7 +67,7 @@
 \begin{frame}
     \begin{itemize}
         \item 有一些 \LaTeX{} 自带的
-        \item 有一些Tsinghua的
+        \item 有一些Tsinghua、PKU的
         \item 本模板来源自 \newline \url{https://www.latexstudio.net/archives/4051.html}
         \item 但是最初的 \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} \cite{origin}已经失效了
         \item 这是n+e大佬在16-17年做的一些ppt：\href{https://github.com/Trinkle23897/oi_slides}{\color{purple}{戳我}}
@@ -83,8 +82,8 @@
 \begin{frame}{这一份主题与原始的THU Beamer Theme区别在于}
     \begin{itemize}
         \item 顶栏的小点变成一行而不是多行
-        \item 中文采用楷书
-        \item 剩下我改了啥我也忘了……我16年魔改的，都四年过去了（x
+        \item 中文采用楷书、西文字体使用TeX Gyre系列、数学字体使用XITS Math
+        \item 使用AI放大了校徽的尺寸，有矢量图可以的大佬联系我
         \item 更多该模板的功能可以参考 \url{https://www.latexstudio.net/archives/4051.html}
         \item 下面列举出了一些Beamer的用法，部分节选自 \url{https://tuna.moe/event/2018/latex/}
     \end{itemize}
@@ -149,9 +148,9 @@
         \psset{unit=0.8cm}
         \begin{pspicture}(-1.75,-3)(3.25,4)
             \psline[linewidth=0.25pt](0,0)(0,4)
-            \rput[tl]{0}(0.2,2){$\vec e_z$}
-            \rput[tr]{0}(-0.9,1.4){$\vec e$}
-            \rput[tl]{0}(2.8,-1.1){$\vec C_{ptm{ext}}$}
+            \rput[tl]{0}(0.2,2){$\vec{e}_z$}
+            \rput[tr]{0}(-0.9,1.4){$\boldsymbol{e}$}
+            \rput[tl]{0}(2.8,-1.1){$\symbf{C}_{ptm{ext}}$}
             \rput[br]{0}(-0.3,2.1){$\theta$}
             \rput{25}(0,0){%
             \psframe[fillstyle=solid,fillcolor=lightgray,linewidth=.8pt](-0.1,-3.2)(0.1,0)}
@@ -337,7 +336,7 @@ $V = \frac{4}{3}\pi r^3$
     \end{itemize}
     \begin{figure}[htpb]
         \centering
-        \includegraphics[width=0.2\linewidth]{pic/PKU_logo.png}
+        \includegraphics[width=0.2\linewidth]{pic/NCPU_logo.png}
         \caption{这个校徽就是矢量图}
     \end{figure}
 \end{frame}
@@ -345,10 +344,10 @@ $V = \frac{4}{3}\pi r^3$
 \section{计划进度}
 \begin{frame}
     \begin{itemize}
-        \item 一月：完成文献调研
-        \item 二月：复现并评测各种Beamer主题美观程度
-        \item 三、四月：美化THU Beamer主题
-        \item 五月：论文撰写
+        \item 一月：完成学校Beamer主题制作
+        \item 二月：完成课件制作
+        \item 三、四月：完成试卷模版制作
+        \item 五月：随缘
     \end{itemize}
 \end{frame}
 
